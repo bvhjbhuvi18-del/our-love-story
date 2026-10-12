@@ -11,13 +11,13 @@ const questions = [
     },
     {
         question: "When was our first VC?",
-        options: ["6/8", "9/6", "6/9", "7/5"],
-        answer: 0
+        options: ["9/6", "6/8", "6/9", "7/5"],
+        answer: 1
     },
     {
         question: "Who are you to me?",
-        options: ["PANIII", "CHELLAPULLAA", "PONDATTIII", "THANGOO"],
-        answer: 0
+        options: ["CHELLAPULLAA", "PANIII", "PONDATTIII", "THANGOO"],
+        answer: 1
     },
     {
         question: "What is my fav thing to do with you?",
@@ -29,138 +29,138 @@ const questions = [
 
     {
         question: "When did I confess my love to you in Telegram?",
-        options: ["03/10/2022", "06/10/2022", "03/11/2022", "30/09/2022"],
-        answer: 0
+        options: ["30/09/2022", "06/10/2022", "03/10/2022", "03/11/2022"],
+        answer: 2
     },
     {
         question: "When was our first VC?",
-        options: ["06/08/2023", "08/06/2023", "06/09/2023", "07/08/2023"],
-        answer: 0
+        options: ["08/06/2023", "06/08/2023", "06/09/2023", "07/08/2023"],
+        answer: 1
     },
     {
         question: "When did we first hold hands in the bedroom?",
-        options: ["04/12/2023", "14/12/2023", "04/11/2023", "04/12/2024"],
-        answer: 0
+        options: ["14/12/2023", "04/11/2023", "04/12/2024", "04/12/2023"],
+        answer: 3
     },
     {
         question: "When was our first kiss?",
-        options: ["19/05/2024", "19/04/2024", "09/05/2024", "21/05/2024"],
-        answer: 0
+        options: ["19/04/2024", "19/05/2024", "09/05/2024", "21/05/2024"],
+        answer: 1
     },
     {
         question: "When was our first hug in the kitchen?",
-        options: ["21/05/2024", "19/05/2024", "21/04/2024", "25/05/2024"],
-        answer: 0
+        options: ["19/05/2024", "21/04/2024", "21/05/2024", "25/05/2024"],
+        answer: 2
     },
     {
         question: "When was our first pic at Velakennai Chruch Road?",
-        options: ["29/09/2024", "27/09/2024", "29/08/2024", "28/09/2024"],
-        answer: 0
+        options: ["27/09/2024", "29/08/2024", "28/09/2024", "29/09/2024"],
+        answer: 3
     },
     {
         question: "When was our first lip kiss and the famous KitKat moment?",
-        options: ["02/11/2024", "28/11/2024", "02/10/2024", "12/11/2024"],
-        answer: 0
+        options: ["28/11/2024", "02/11/2024", "02/10/2024", "12/11/2024"],
+        answer: 1
     },
     {
         question: "When did we take our 2nd pic at Madhu Function?",
-        options: ["28/11/2024", "29/11/2024", "28/10/2024", "27/11/2024"],
-        answer: 0
+        options: ["29/11/2024", "28/10/2024", "28/11/2024", "27/11/2024"],
+        answer: 2
     },
     {
         question: "When did we take our 3rd pic at the steps?",
-        options: ["17/01/2025", "17/02/2025", "07/01/2025", "18/01/2025"],
-        answer: 0
+        options: ["17/02/2025", "17/01/2025", "07/01/2025", "18/01/2025"],
+        answer: 1
     },
     {
         question: "When was Harshada Function?",
-        options: ["18/04/2025", "18/03/2025", "08/04/2025", "19/04/2025"],
-        answer: 0
+        options: ["18/03/2025", "08/04/2025", "19/04/2025", "18/04/2025"],
+        answer: 3
     },
     {
         question: "When did we meet alone in Super Park and I gave you a flower?",
-        options: ["03/05/2025", "05/03/2025", "03/06/2025", "13/05/2025"],
-        answer: 0
+        options: ["05/03/2025", "03/05/2025", "03/06/2025", "13/05/2025"],
+        answer: 1
     },
     {
         question: "When did we take our 5th pic at the park?",
-        options: ["05/06/2025", "05/05/2025", "15/06/2025", "06/05/2025"],
-        answer: 0
+        options: ["05/05/2025", "15/06/2025", "05/06/2025", "06/05/2025"],
+        answer: 2
     },
     {
         question: "When was the function in July 2025?",
-        options: ["01/07/2025", "07/01/2025", "01/08/2025", "11/07/2025"],
-        answer: 0
+        options: ["07/01/2025", "01/07/2025", "01/08/2025", "11/07/2025"],
+        answer: 1
     },
     {
         question: "When did we take our 6th pic near Shenoy Nagar Metro Road?",
-        options: ["16/08/2025", "18/08/2025", "16/07/2025", "06/08/2025"],
-        answer: 0
+        options: ["18/08/2025", "16/07/2025", "16/08/2025", "06/08/2025"],
+        answer: 2
     },
     {
         question: "When did we first meet in the Metro?",
-        options: ["27/09/2025", "29/09/2025", "27/08/2025", "17/09/2025"],
-        answer: 0
+        options: ["29/09/2025", "27/08/2025", "17/09/2025", "27/09/2025"],
+        answer: 3
     },
     {
         question: "When did we take our 8th pic in the Metro and have the special Palkova?",
-        options: ["17/10/2025", "07/10/2025", "17/09/2025", "27/10/2025"],
-        answer: 0
+        options: ["07/10/2025", "17/10/2025", "17/09/2025", "27/10/2025"],
+        answer: 1
     },
     {
         question: "When was our 9th pic during our 2nd Metro roaming?",
-        options: ["28/10/2025", "29/10/2025", "18/10/2025", "28/11/2025"],
-        answer: 0
+        options: ["29/10/2025", "18/10/2025", "28/10/2025", "28/11/2025"],
+        answer: 2
     },
     {
         question: "When was our 10th pic near the Institute and you got your Bday gift?",
-        options: ["29/11/2025", "27/11/2025", "29/10/2025", "19/11/2025"],
-        answer: 0
+        options: ["27/11/2025", "29/11/2025", "29/10/2025", "19/11/2025"],
+        answer: 1
     },
     {
         question: "When was our 11th pic at the Institute with me as the driver, Brownie and Maggie?",
-        options: ["27/12/2025", "27/11/2025", "17/12/2025", "29/12/2025"],
-        answer: 0
+        options: ["27/11/2025", "17/12/2025", "27/12/2025", "29/12/2025"],
+        answer: 2
     },
     {
         question: "When was our 12th pic at Tower Park with continuous gifts and our first kiss video?",
-        options: ["26/03/2026", "28/03/2026", "26/02/2026", "16/03/2026"],
-        answer: 0
+        options: ["28/03/2026", "26/02/2026", "16/03/2026", "26/03/2026"],
+        answer: 3
     },
     {
         question: "When was our 13th pic at Tower with the lipkiss video?",
-        options: ["28/03/2026", "26/03/2026", "28/04/2026", "18/03/2026"],
-        answer: 0
+        options: ["26/03/2026", "28/03/2026", "28/04/2026", "18/03/2026"],
+        answer: 1
     },
     {
         question: "When was our 14th pic at Tower with the first practice?",
-        options: ["24/06/2026", "26/06/2026", "24/05/2026", "14/06/2026"],
-        answer: 0
+        options: ["26/06/2026", "24/06/2026", "24/05/2026", "14/06/2026"],
+        answer: 1
     },
     {
         question: "When was our Movie Night?",
-        options: ["31/07/2026", "30/07/2026", "31/08/2026", "17/07/2026"],
-        answer: 0
+        options: ["30/07/2026", "31/08/2026", "31/07/2026", "17/07/2026"],
+        answer: 2
     },
     {
         question: "When was our 15th pic with Xerox, Kinderjoy, Butterfly and Chocolate?",
-        options: ["08/08/2026", "08/07/2026", "18/08/2026", "06/08/2026"],
-        answer: 0
+        options: ["08/07/2026", "18/08/2026", "06/08/2026", "08/08/2026"],
+        answer: 3
     },
     {
         question: "When was our 16th pic at Tower with the long lipkiss video?",
-        options: ["05/09/2026", "05/08/2026", "15/09/2026", "06/09/2026"],
-        answer: 0
+        options: ["05/08/2026", "05/09/2026", "15/09/2026", "06/09/2026"],
+        answer: 1
     },
     {
         question: "When was our 17th pic at Tower?",
-        options: ["16/09/2026", "16/08/2026", "26/09/2026", "17/09/2026"],
-        answer: 0
+        options: ["16/08/2026", "26/09/2026", "16/09/2026", "17/09/2026"],
+        answer: 2
     },
     {
         question: "When did we go to Wonderla and have our special moments together?",
-        options: ["27/09/2026", "29/09/2026", "27/08/2026", "17/09/2026"],
-        answer: 0
+        options: ["29/09/2026", "27/08/2026", "17/09/2026", "27/09/2026"],
+        answer: 3
     }
 ];
 
@@ -310,22 +310,32 @@ function loadQuestion() {
     // Reset teddy bear to gentle happy idle
     setBearState('idle', 'Guess our special memory! 💕');
 
+    // Prepare option objects with their correctness
+    const randomizedOptions = q.options.map((opt, idx) => ({
+        text: opt,
+        isCorrect: idx === q.answer
+    }));
+
+    // Fisher-Yates shuffle algorithm to completely randomize option order
+    for (let i = randomizedOptions.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [randomizedOptions[i], randomizedOptions[j]] = [randomizedOptions[j], randomizedOptions[i]];
+    }
+
     optionsContainer.innerHTML = '';
-    q.options.forEach((opt, index) => {
+    randomizedOptions.forEach((item) => {
         const btn = document.createElement('button');
         btn.classList.add('option-btn');
-        btn.innerText = opt;
-        btn.onclick = () => handleAnswer(index, btn);
+        btn.innerText = item.text;
+        btn.dataset.correct = item.isCorrect ? "true" : "false";
+        btn.onclick = () => handleAnswer(item.isCorrect, btn);
         optionsContainer.appendChild(btn);
     });
 }
 
-function handleAnswer(selectedIndex, btn) {
+function handleAnswer(isCorrect, btn) {
     if (isAnimating) return;
     isAnimating = true;
-
-    const q = questions[currentQuestionIndex];
-    const isCorrect = selectedIndex === q.answer;
 
     if (isCorrect) {
         btn.classList.add('correct');
@@ -338,11 +348,13 @@ function handleAnswer(selectedIndex, btn) {
         triggerHeartShower();
     } else {
         btn.classList.add('wrong');
-        // Highlight correct option
+        // Highlight the correct option wherever it was placed
         const buttons = optionsContainer.querySelectorAll('.option-btn');
-        if (buttons[q.answer]) {
-            buttons[q.answer].classList.add('correct');
-        }
+        buttons.forEach(b => {
+            if (b.dataset.correct === "true") {
+                b.classList.add('correct');
+            }
+        });
 
         // Teddy bear CRIES WITH TEARS!
         setBearState('cry', getRandomMessage(cryMessages));
