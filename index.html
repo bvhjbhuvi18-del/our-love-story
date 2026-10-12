@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Story Quiz ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Start Screen -->
+        <div id="start-screen" class="screen active">
+            <div id="start-bear" class="bear-mascot-container idle">
+                <svg class="bear-svg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="15" fill="#ba733f" />
+                    <circle cx="28" cy="28" r="8" fill="#fcd7b6" />
+                    <circle cx="92" cy="28" r="15" fill="#ba733f" />
+                    <circle cx="92" cy="28" r="8" fill="#fcd7b6" />
+                    <ellipse cx="60" cy="86" rx="28" ry="24" fill="#c97d47" />
+                    <ellipse cx="60" cy="87" rx="18" ry="15" fill="#fcd7b6" />
+                    <ellipse cx="60" cy="52" rx="34" ry="28" fill="#d98952" />
+                    <ellipse cx="38" cy="58" rx="6" ry="4" fill="#ff7690" opacity="0.65" />
+                    <ellipse cx="82" cy="58" rx="6" ry="4" fill="#ff7690" opacity="0.65" />
+                    <ellipse cx="60" cy="59" rx="16" ry="11" fill="#fcd7b6" />
+                    <path d="M56 54 Q60 57 64 54 Q60 60 56 54 Z" fill="#4d2f1d" />
+                    <g class="expr-idle">
+                        <circle cx="45" cy="48" r="3.5" fill="#2d1b10" />
+                        <circle cx="44" cy="46.5" r="1.3" fill="#ffffff" />
+                        <circle cx="75" cy="48" r="3.5" fill="#2d1b10" />
+                        <circle cx="74" cy="46.5" r="1.3" fill="#ffffff" />
+                        <path d="M56 61 Q60 64 64 61" stroke="#4d2f1d" stroke-width="2" fill="none" stroke-linecap="round" />
+                    </g>
+                    <g class="bear-paws idle-paws">
+                        <ellipse cx="40" cy="86" rx="7" ry="6" fill="#c97d47" />
+                        <ellipse cx="80" cy="86" rx="7" ry="6" fill="#c97d47" />
+                        <path d="M60 82 C60 79 56 76 53 79 C50 82 50 85 60 92 C70 85 70 82 67 79 C64 76 60 79 60 82 Z" fill="#ff6b8b" />
+                    </g>
+                    <ellipse cx="43" cy="104" rx="10" ry="7" fill="#ba733f" />
+                    <ellipse cx="43" cy="104" rx="6" ry="4" fill="#fcd7b6" />
+                    <ellipse cx="77" cy="104" rx="10" ry="7" fill="#ba733f" />
+                    <ellipse cx="77" cy="104" rx="6" ry="4" fill="#fcd7b6" />
+                </svg>
+            </div>
+            <h1>Our Love Story ❤️</h1>
+            <p>How well do you remember our special moments? 💕</p>
+            <button id="start-btn" class="btn primary">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen hidden">
+            <header>
+                <div class="score-board">Score: <span id="score">0</span></div>
+                <div class="progress">Question <span id="current-q">1</span>/<span id="total-q">32</span></div>
+            </header>
+
+            <!-- Teddy Bear Mascot Reaction Character -->
+            <div id="quiz-bear" class="bear-mascot-container idle">
+                <svg class="bear-svg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Ears -->
+                    <circle cx="28" cy="28" r="15" fill="#ba733f" />
+                    <circle cx="28" cy="28" r="8" fill="#fcd7b6" />
+                    <circle cx="92" cy="28" r="15" fill="#ba733f" />
+                    <circle cx="92" cy="28" r="8" fill="#fcd7b6" />
+
+                    <!-- Body -->
+                    <ellipse cx="60" cy="86" rx="28" ry="24" fill="#c97d47" />
+                    <ellipse cx="60" cy="87" rx="18" ry="15" fill="#fcd7b6" />
+
+                    <!-- Head -->
+                    <ellipse cx="60" cy="52" rx="34" ry="28" fill="#d98952" />
+
+                    <!-- Blush -->
+                    <ellipse cx="38" cy="58" rx="6" ry="4" fill="#ff7690" opacity="0.65" />
+                    <ellipse cx="82" cy="58" rx="6" ry="4" fill="#ff7690" opacity="0.65" />
+
+                    <!-- Muzzle & Nose -->
+                    <ellipse cx="60" cy="59" rx="16" ry="11" fill="#fcd7b6" />
+                    <path d="M56 54 Q60 57 64 54 Q60 60 56 54 Z" fill="#4d2f1d" />
+
+                    <!-- Idle Expression -->
+                    <g class="expr-idle">
+                        <circle cx="45" cy="48" r="3.5" fill="#2d1b10" />
+                        <circle cx="44" cy="46.5" r="1.3" fill="#ffffff" />
+                        <circle cx="75" cy="48" r="3.5" fill="#2d1b10" />
+                        <circle cx="74" cy="46.5" r="1.3" fill="#ffffff" />
+                        <path d="M56 61 Q60 64 64 61" stroke="#4d2f1d" stroke-width="2" fill="none" stroke-linecap="round" />
+                    </g>
+
+                    <!-- Joy Expression (Bears Jumps With Joy) -->
+                    <g class="expr-joy">
+                        <path d="M41 49 Q46 43 50 49" stroke="#2d1b10" stroke-width="2.8" fill="none" stroke-linecap="round" />
+                        <path d="M70 49 Q74 43 79 49" stroke="#2d1b10" stroke-width="2.8" fill="none" stroke-linecap="round" />
+                        <path d="M54 60 Q60 69 66 60 Z" fill="#9c2b3f" />
+                        <path d="M56 62 Q60 68 64 62 Z" fill="#ff7690" />
+                    </g>
+
+                    <!-- Cry Expression (Teddy Bear Cries With Tears) -->
+                    <g class="expr-cry">
+                        <path d="M41 47 Q46 52 50 47" stroke="#2d1b10" stroke-width="2.8" fill="none" stroke-linecap="round" />
+                        <path d="M70 47 Q74 52 79 47" stroke="#2d1b10" stroke-width="2.8" fill="none" stroke-linecap="round" />
+                        <path d="M55 64 Q60 59 65 64" stroke="#4d2f1d" stroke-width="2.2" fill="none" stroke-linecap="round" />
+                        <!-- Animated flowing teardrops -->
+                        <path class="tear-stream" d="M44 51 Q38 66 43 78 Q47 66 44 51" fill="#68b4f8" />
+                        <path class="tear-stream" d="M76 51 Q82 66 77 78 Q73 66 76 51" fill="#68b4f8" />
+                        <circle class="tear-drip" cx="43" cy="80" r="3" fill="#68b4f8" />
+                        <circle class="tear-drip" cx="77" cy="80" r="3" fill="#68b4f8" />
+                    </g>
+
+                    <!-- Idle Paws -->
+                    <g class="bear-paws idle-paws">
+                        <ellipse cx="40" cy="86" rx="7" ry="6" fill="#c97d47" />
+                        <ellipse cx="80" cy="86" rx="7" ry="6" fill="#c97d47" />
+                        <path d="M60 82 C60 79 56 76 53 79 C50 82 50 85 60 92 C70 85 70 82 67 79 C64 76 60 79 60 82 Z" fill="#ff6b8b" />
+                    </g>
+
+                    <!-- Joy Paws (Arms raised high celebrating) -->
+                    <g class="bear-paws joy-paws">
+                        <ellipse cx="26" cy="60" rx="7" ry="10" transform="rotate(-35 26 60)" fill="#c97d47" />
+                        <ellipse cx="94" cy="60" rx="7" ry="10" transform="rotate(35 94 60)" fill="#c97d47" />
+                    </g>
+
+                    <!-- Cry Paws (Paws wiping tears) -->
+                    <g class="bear-paws cry-paws">
+                        <ellipse cx="36" cy="56" rx="7" ry="7" fill="#c97d47" />
+                        <ellipse cx="84" cy="56" rx="7" ry="7" fill="#c97d47" />
+                    </g>
+
+                    <!-- Feet -->
+                    <ellipse cx="43" cy="104" rx="10" ry="7" fill="#ba733f" />
+                    <ellipse cx="43" cy="104" rx="6" ry="4" fill="#fcd7b6" />
+                    <ellipse cx="77" cy="104" rx="10" ry="7" fill="#ba733f" />
+                    <ellipse cx="77" cy="104" rx="6" ry="4" fill="#fcd7b6" />
+                </svg>
+
+                <div class="bear-joy-effects">
+                    <span class="sparkle s1">✨</span>
+                    <span class="sparkle s2">💖</span>
+                    <span class="sparkle s3">⭐</span>
+                    <span class="sparkle s4">🎉</span>
+                </div>
+                <div class="bear-cry-effects">
+                    <span class="crying-tear t1">💧</span>
+                    <span class="crying-tear t2">💧</span>
+                    <span class="crying-tear t3">😭</span>
+                </div>
+            </div>
+
+            <!-- Dynamic Speech Bubble -->
+            <div id="bear-speech" class="bear-speech-bubble">Guess our special memory! 💕</div>
+
+            <div class="question-container">
+                <h2 id="question-text">Question goes here?</h2>
+                <div id="options-container" class="options-grid">
+                    <!-- Options injected via JS -->
+                </div>
+            </div>
+        </div>
+
+        <!-- End Screen -->
+        <div id="end-screen" class="screen hidden">
+            <div id="end-bear" class="bear-mascot-container joy">
+                <svg class="bear-svg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="15" fill="#ba733f" />
+                    <circle cx="28" cy="28" r="8" fill="#fcd7b6" />
+                    <circle cx="92" cy="28" r="15" fill="#ba733f" />
+                    <circle cx="92" cy="28" r="8" fill="#fcd7b6" />
+                    <ellipse cx="60" cy="86" rx="28" ry="24" fill="#c97d47" />
+                    <ellipse cx="60" cy="87" rx="18" ry="15" fill="#fcd7b6" />
+                    <ellipse cx="60" cy="52" rx="34" ry="28" fill="#d98952" />
+                    <ellipse cx="38" cy="58" rx="6" ry="4" fill="#ff7690" opacity="0.65" />
+                    <ellipse cx="82" cy="58" rx="6" ry="4" fill="#ff7690" opacity="0.65" />
+                    <ellipse cx="60" cy="59" rx="16" ry="11" fill="#fcd7b6" />
+                    <path d="M56 54 Q60 57 64 54 Q60 60 56 54 Z" fill="#4d2f1d" />
+                    <g class="expr-joy">
+                        <path d="M41 49 Q46 43 50 49" stroke="#2d1b10" stroke-width="2.8" fill="none" stroke-linecap="round" />
+                        <path d="M70 49 Q74 43 79 49" stroke="#2d1b10" stroke-width="2.8" fill="none" stroke-linecap="round" />
+                        <path d="M54 60 Q60 69 66 60 Z" fill="#9c2b3f" />
+                        <path d="M56 62 Q60 68 64 62 Z" fill="#ff7690" />
+                    </g>
+                    <g class="bear-paws joy-paws">
+                        <ellipse cx="26" cy="60" rx="7" ry="10" transform="rotate(-35 26 60)" fill="#c97d47" />
+                        <ellipse cx="94" cy="60" rx="7" ry="10" transform="rotate(35 94 60)" fill="#c97d47" />
+                    </g>
+                    <ellipse cx="43" cy="104" rx="10" ry="7" fill="#ba733f" />
+                    <ellipse cx="43" cy="104" rx="6" ry="4" fill="#fcd7b6" />
+                    <ellipse cx="77" cy="104" rx="10" ry="7" fill="#ba733f" />
+                    <ellipse cx="77" cy="104" rx="6" ry="4" fill="#fcd7b6" />
+                </svg>
+                <div class="bear-joy-effects">
+                    <span class="sparkle s1">✨</span>
+                    <span class="sparkle s2">💖</span>
+                    <span class="sparkle s3">⭐</span>
+                    <span class="sparkle s4">🎉</span>
+                </div>
+            </div>
+            <h1 id="end-title">Game Over</h1>
+            <p id="end-message">Score: <span id="final-score">0</span> / <span id="final-total">32</span></p>
+            <button id="restart-btn" class="btn primary">Try Again</button>
+        </div>
+    </div>
+
+    <!-- Celebration Animation Overlay -->
+    <div id="heart-container" class="overlay hidden"></div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
